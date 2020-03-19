@@ -1,0 +1,17 @@
+syntax = "proto3";
+
+package wallet;
+
+service Wallet {
+    rpc GetWallet(GetWalletRequest)returns (GetWalletResponse) {}
+}
+
+message GetWalletRequest{
+    int64 id = 1;
+}
+
+message GetWalletResponse{
+    int64 id = 1;
+    string symbol=2;
+    double balance = 3;
+}
