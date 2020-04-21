@@ -64,6 +64,6 @@ func (s *WalletService) GetWallet(ctx context.Context, in *wallet.GetWalletReque
 	out.Id = in.Id
 	out.Symbol = "OLO"
 	out.Balance = 1234.5678
-	time.Sleep(time.Millisecond * 100)
+	//time.Sleep(time.Millisecond * 100)
 	return nil
 }

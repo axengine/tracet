@@ -65,7 +65,7 @@ func NewUserService() *UserService {
 func (s *UserService) GetUser(ctx context.Context, in *user.GetUserRequest, out *user.GetUserResponse) error {
 	out.Id = in.Id
 	out.Name = "hehe"
-	time.Sleep(time.Millisecond * 100)
+	//time.Sleep(time.Millisecond * 100)
 
 	cli := wallet.NewWalletService("tracet.wallet", client.DefaultClient)
 	resp, err := cli.GetWallet(ctx, &wallet.GetWalletRequest{
